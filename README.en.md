@@ -10,7 +10,7 @@
 
 Three reusable dialogue Skills for ordinary users: translate messy natural-language questions into executable prompts, build an operational identity card for a long-term AI collaborator, and turn self-understanding into a testable real-world action.
 
-**No expert Skill, complex workbench, or Zane-specific personal data required.**
+**Each Skill works independently and can connect naturally when a problem crosses layers.**
 
 [Quick start](#quick-start) · [What it solves](#what-it-solves) · [Three Skills](#three-skills) · [Install](#install) · [Method boundaries](#method-boundaries)
 
@@ -45,7 +45,7 @@ Use zane-question-intent-translator.
 I want to ask AI: “Am I simply not suited for entrepreneurship?”
 Do not answer that conclusion yet. Identify the decision I am actually trying to make,
 separate facts from my current interpretation and missing information,
-then write a prompt I can copy into any general-purpose AI.
+then write a prompt I can use with the AI I am already talking to.
 ```
 
 #### You want a long-term AI collaborator
@@ -78,7 +78,7 @@ Original words → desired progress → current decision
 → answer-changing ambiguity and assumptions → copyable prompt → next step
 ```
 
-It preserves the user's tone, emotion, and stance, but treats the stance as a hypothesis rather than silently converting it into fact. Experts, search, and other Skills are optional downstream resources.
+It preserves the user's tone, emotion, and stance, but treats the stance as a hypothesis rather than silently converting it into fact. The resulting question can be used immediately to continue the conversation or execute the task.
 
 ### `zane-agent-identity-card-builder`
 
@@ -133,14 +133,6 @@ npx -y skills add xuehuafu233-alt/zane-dialogue-skills -g --all
 ```
 
 After installation, name the Skill directly in natural language. Exact invocation syntax depends on your Agent.
-
-## How this differs from adjacent tools
-
-- **Not a prompt-template library:** the goal is to define the problem and current decision, not stack roles, formats, and adjectives.
-- **No mandatory expert panel:** the translated prompt works with a general-purpose AI.
-- **Not an expert-chat moderator:** general bias detection lives in question translation; active multi-expert consensus audits belong to a dedicated moderator.
-- **Not therapy or personality testing:** judgments remain provisional and open to real-world falsification.
-- **Not a private memory system:** long-term storage and its source of truth remain decisions for the user and their environment.
 
 ## Method boundaries
 
